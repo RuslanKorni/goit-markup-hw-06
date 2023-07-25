@@ -1,0 +1,120 @@
+
+@media screen and (min-width: 0) {
+    .doing {
+        display: none;
+      }
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  .advantages-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+
+  .team-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers > .container {
+    max-width: 582px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
+  }
+
+ .customers-item {
+  width: calc((100% - 24px*2) / 3)
+ }
+
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-block {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud, #f4f4fd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .advantages-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+
+  .doing {
+    display: block;
+  }
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .customers {
+    padding: 120px 0;
+  }
+
+  .customers > .container {
+    max-width: 1158px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+}

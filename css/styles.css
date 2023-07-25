@@ -35,6 +35,12 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -45,10 +51,10 @@ ol {
 
 .container {
   width: 100%;
-  max-width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+  outline: 2px solid #ae4811;
 }
 
 .visually-hidden {
@@ -220,7 +226,8 @@ ol {
 /*!---------------- ADVANTAGES ----------------*/
 
 .advantages {
-  padding: 120px 0;
+/*  padding: 120px 0; */
+padding: 96px 0;
 }
 
 .advantages-container {
@@ -228,7 +235,9 @@ ol {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+/* gap: 24px; */
+gap: 72px;
 }
 
 .advantages-block {
@@ -240,18 +249,22 @@ ol {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
+  display: none;
 }
 
 .advantages-item {
-  width: calc((100% - 24px * 3) / 4);
+ width: 100%; 
+ /* width: calc((100% - 24px * 3) / 4); */
 }
 
 .advantages-subtitle {
   color: var(--navyblue, #2e2f42);
-  font-size: 20px;
+ /* font-size: 20px; */
+ font-size: 36px;
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+ /* line-height: 1.2; */
+ letter-spacing: 0.02em;
+ line-height: 1.11;
   margin-bottom: 8px;
 }
 
@@ -290,15 +303,13 @@ ol {
   width: calc((100% - 24px * 2) / 3);
 }
 
-.doing-img {
-  display: block;
-}
 
 /*!-------------- TEAM ---------------*/
 
 .team {
   background-color: var(--cloud, #f4f4fd);
-  padding: 120px 0;
+ /* padding: 120px 0; */
+ padding: 96px 0;
 }
 
 .team-title {
@@ -314,7 +325,9 @@ ol {
 
 .team-list {
   display: flex;
-  gap: 24px;
+ /* gap: 24px; */
+ flex-wrap: wrap;
+ gap: 72px;
 }
 
 .team-item {
@@ -325,9 +338,7 @@ ol {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.team-img {
-  display: block;
-}
+
 
 .team-container {
   padding: 32px 0;
@@ -385,7 +396,8 @@ ol {
 /*!------------ CUSTOMERS ------------*/
 
 .customers {
-  padding: 120px 0;
+ /* padding: 120px 0; */
+ padding: 96px 0;
 }
 
 .customers-title {
@@ -401,11 +413,15 @@ ol {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+ /* gap: 24px; */
+ column-gap: 16px;
+ row-gap: 72px;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+ /* width: calc((100% - 120px) / 6); */
+ width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customers-link {
